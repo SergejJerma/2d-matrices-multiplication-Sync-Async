@@ -21,7 +21,7 @@ Programa paleidžiama iš .jar failo
 ```
 java -jar matrices.jar
 ```
-Paleidus programą, atsidaro (http://localhost:8080/) vartotojo interfeisas, kuriame jis gali įvesti matricos dydį (nemažiau 2). 
+Paleidus programą, atsidaro (http://localhost:8080/) vartotojo interfeisas, kuriame galima įvesti matricos dydį (apribojimas - ne mažiau 2). 
 
 ## Algoritmas
 * pagal vartotojo įvestą dydį sugeneruojamos dvi matricos
