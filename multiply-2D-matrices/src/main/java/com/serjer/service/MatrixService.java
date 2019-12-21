@@ -17,6 +17,8 @@ public class MatrixService {
 	@Autowired
 	@Qualifier("fixedThreadPool")
 	private ExecutorService executor;
+	
+	private static int[][] result;
 
 	public int[][] generateMatrix(int size) {
 		int[][] matrix = new int[size][size];
@@ -30,7 +32,7 @@ public class MatrixService {
 
 	public int[][] multiplyMatricesSync(int[][] a, int[][] b, int size) {
 
-		final int[][] result = new int[size][size];
+		result = new int[size][size];
 
 		for (int i = 0; i < a.length; ++i) {
 			for (int j = 0; j < b[0].length; ++j) {
@@ -45,7 +47,7 @@ public class MatrixService {
 	public int[][] multiplyMatricesAsync1(int[][] a, int[][] b, int size)
 			throws InterruptedException, ExecutionException {
 		
-		final int[][] result = new int[size][size];
+		result = new int[size][size];
 
 		Future<Integer> future[][] = new Future[size][size];
 
@@ -66,7 +68,7 @@ public class MatrixService {
 	public int[][] multiplyMatricesAsync2(int[][] a, int[][] b, int size) 
 			throws InterruptedException {
 	
-		final int[][] result = new int[size][size];
+		result = new int[size][size];
 
 		for (int i = 0; i < a.length; ++i) {
 			final int fi = i;
