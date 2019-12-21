@@ -26,8 +26,8 @@ Paleidus programą, atsidaro (http://localhost:8080/) vartotojo interfeisas, kur
 ## Algoritmas
 * pagal vartotojo įvestą dydį sugeneruojamos dvi matricos
 * sinchroniškai atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
-* asinchroniškai (skaičiuojami atskiri naujos matricojs elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
-* asinchroniškai (skaičiuojami atskiri naujos matricojs eilučių elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
+* asinchroniškai (skaičiuojami atskiri naujos matricos elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
+* asinchroniškai (skaičiuojami atskiri naujos matricos eilučių elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
 * patikrinama iš visų metodų gautos matricos, ar jos identiškos
 * vartotojui interfeise pateikiami visų skaičiavimų rezultatai
 
