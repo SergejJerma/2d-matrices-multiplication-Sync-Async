@@ -6,7 +6,7 @@ Programa sinchnoniškai ir asinchroniškai sudaugina dvi įvesto dydžio kvadrat
 ```
 Java SE 11 
 Spring Boot 2.2.1
-Maven 6.0.1
+Gradle 6.0.1
 
 ```
 ### Front-end 
