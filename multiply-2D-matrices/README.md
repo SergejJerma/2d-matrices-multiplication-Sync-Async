@@ -37,7 +37,7 @@ Input:
 Enter matrices size
 1000
 ```
-Output
+Output:
 ```
 
 
