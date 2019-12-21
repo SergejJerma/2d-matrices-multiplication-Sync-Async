@@ -1,6 +1,6 @@
 # 2D matricų daugyba
 
-Programa sinchnoniškai ir asinchroniškai sudaugina dvi įvesto dydžio kvadratines matricas 
+Programa sinchnoniškai ir asinchroniškai (naudojamas 8 srautų pulas) sudaugina dvi įvesto dydžio kvadratines matricas 
 
 ### Back-end 
 ```
