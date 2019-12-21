@@ -28,7 +28,7 @@ Paleidus programą, atsidaro (http://localhost:8080/) vartotojo interfeisas, kur
 * sinchroniškai atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
 * asinchroniškai (skaičiuojami atskiri naujos matricos elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
 * asinchroniškai (skaičiuojami atskiri naujos matricos eilučių elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
-* patikrinama iš visų metodų gautos matricos, ar jos identiškos
+* patikrinamos iš visų metodų gautos matricos, ar jos identiškos
 * vartotojui interfeise pateikiami visų skaičiavimų rezultatai
 
 ## Pavyzdys
