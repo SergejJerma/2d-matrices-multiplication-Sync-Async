@@ -24,10 +24,12 @@ java -jar matrices.jar
 Paleidus programą, atsidaro (http://localhost:8080/) vartotojo interfeisas, kuriame jis gali įvesti matricos dydį (nemažiau 2). 
 
 ## Algoritmas
-* pagal varttotojo įvestą dydį sugeneruojamos dvi matricos
+* pagal vartotojo įvestą dydį sugeneruojamos dvi matricos
 * sinchroniškai atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
 * asinchroniškai (skaičiuojami atskiri naujos matricojs elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
 * asinchroniškai (skaičiuojami atskiri naujos matricojs eilučių elementai) atliekama dviejų matricų daugyba - fiksuojamas atlikimo laikas
+* patikrinama iš visų metodų gautos matricos, ar jos identiškos
+* vartotojui interfeise pateikiami visų skaičiavimų rezultatai
 
 ## Pavyzdys
 Input:
