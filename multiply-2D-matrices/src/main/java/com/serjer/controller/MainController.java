@@ -1,5 +1,4 @@
 package com.serjer.controller;
-import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -10,7 +9,6 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import com.serjer.service.MatrixService;
-
 
 
 @Controller
@@ -48,7 +46,8 @@ public class MainController {
 		long estimatedTime2 = System.currentTimeMillis() - startTime2;
 		model.addAttribute("time2", estimatedTime2);
 		
-		if (Arrays.deepEquals(mSync, mAsync1) && Arrays.deepEquals(mSync, mAsync2)) message = "SYNC and ASYNC1/ASYNC2 matrices are equals";
+		if (matrixService.areMatricesEquals(mSync, mAsync1, mAsync2)) 
+			 message = "SYNC and ASYNC1/ASYNC2 matrices are equals";
 		else message = "!error! SYNC and ASYNC1/ASYNC2 matrices aren't equals!";
 		model.addAttribute("message", message);
 		

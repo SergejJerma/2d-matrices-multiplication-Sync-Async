@@ -1,5 +1,6 @@
 package com.serjer.service;
 
+import java.util.Arrays;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Future;
@@ -83,5 +84,9 @@ public class MatrixService {
 		executor.shutdown();
 		executor.awaitTermination(1, TimeUnit.DAYS);
 		return result;
+	}
+	
+	public boolean areMatricesEquals(int [][] mSync, int [][] mAsync1, int [][] mAsync2) {
+		return Arrays.deepEquals(mSync, mAsync1) && Arrays.deepEquals(mSync, mAsync2);
 	}
 }

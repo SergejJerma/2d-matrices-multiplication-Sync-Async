@@ -18,28 +18,34 @@ class MatrixServiceTests {
 	
 	private static int [][] a = {{1,2,3},{4,5,6},{7,8,9}};
 	private static int [][] b = {{1,2,3},{4,5,6},{7,8,9}};
+	private static int [][] c = {{1,2,3},{4,5,6},{7,8,9}};
 	private static int [][] expected = {{30,36,42},{66,81,96},{102,126,150}};	
 	private static int size = a.length;
 	
 	@Test
-    public void testSyncMethod() {
+    public void testMultiplySyncMethod() {
 		assertArrayEquals(expected, matrixService.multiplyMatricesSync(a, b, size));
     }
 	
 	@Test
-    public void testAsync1Method() throws InterruptedException, ExecutionException {
+    public void testMultiplyAsync1Method() throws InterruptedException, ExecutionException {
 		assertArrayEquals(expected, matrixService.multiplyMatricesAsync1(a, b, size));
     }
 	
 	@Test
-    public void testAsync2Method() throws InterruptedException {
+    public void testMultiplyAsync2Method() throws InterruptedException {
 		assertArrayEquals(expected, matrixService.multiplyMatricesAsync2(a, b, size));
     }
 	
 	@Test
-    public void testGenerateMethod() throws InterruptedException {
+    public void testGenerateMatrixMethod() throws InterruptedException {
 		assertEquals(size, matrixService.generateMatrix(size).length);
 		assertEquals(size, matrixService.generateMatrix(size)[0].length);
+    }
+	
+	@Test
+    public void testAreMatricesEqualsMethod() throws InterruptedException {
+		assertTrue(matrixService.areMatricesEquals(a, b, c));
     }
 	
 }
